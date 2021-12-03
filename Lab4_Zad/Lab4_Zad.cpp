@@ -129,18 +129,18 @@ auto Zadanie3() -> void
 	{
 		for (int x = 0; x < N; ++x)
 		{
-			switch (y)
+			switch (x)
 			{
 			case 0:
-				Tablica[y][x] = x; //- w pierwszej kolumnie liczby od 0 do 9;
+				Tablica[y][x] = y; //- w pierwszej kolumnie liczby od 0 do 9;
 				break;
 
 			case 1:
-				Tablica[y][x] = (x << 1); //- w drugiej sumę tych liczb (np. 0+0, 1+1 itd..); X+X <=> 2X <=> przesuniecie bitowe w lewo (szybsze)
+				Tablica[y][x] = (y << 1); //- w drugiej sumę tych liczb (np. 0+0, 1+1 itd..); X+X <=> 2X <=> przesuniecie bitowe w lewo (szybsze)
 				break;
 
 			case 2: 
-				Tablica[y][x] = x * x; //- w trzeciej – kwadraty tych liczb;
+				Tablica[y][x] = y * y; //- w trzeciej – kwadraty tych liczb;
 				break;
 
 			case 3:
